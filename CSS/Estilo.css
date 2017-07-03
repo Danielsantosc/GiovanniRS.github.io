@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+#menu {
+    background-color: #FFF;
+    z-index: 6;
+    position: fixed;
+	width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+}
+
+.menor {
+    width: 35px;
+    background-color: #000;
+}
+
+nav div {
+    margin: 1.5% 0% 1% 15%;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    max-height: 100%;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    transition : width 0.2s;
+}
+
+.btn {
+    color: #3a3a3a;
+    font-size: 20px;
+    font-family: Open Sans Condensed;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+.btn::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #515151;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.btn:hover::after {
+    opacity: 1;
+}
+
+.contatog div figure img{
+    width: 30px;
+}
+
+.contatog {
+    position: relative;
+}
+
+.contato {
+    position: absolute;
+    opacity: 1;
+    z-index:1;
+    cursor: pointer;   
+}
+
+.contato_hover {
+    cursor: pointer;
+    margin-top: 30%;
+}
+
+.contato:hover {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#slides {
+    margin: 0;
+    overflow: hidden;
+    padding-top: 119px;
+}
+
+#slides ul {
+    padding: 0;
+    width: 100%;
+    height: 415px;
+}
+
+#slides ul li figure img {
+    background-size: cover;
+    width: 100%;
+    height: 415px;
+}
+
+#prox {
+    top: 50%;
+    left: 93%;
+}
+
+#volt {
+    top: 50%;
+    right: 93%;
+}
+
+#prox, #volt {
+    z-index: 5;
+    position: absolute;
+    font-family: Calibri;
+    font-size: 400%;
+}
+ 
+#prox li, #volt li {
+    display: inline;
+}
+ 
+#prox a, #volt a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color:transparent;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+#slides:hover #volt a, #slides:hover #prox a {
+    color:#FFF;
+}
+
+#bv{
+    margin: 0;
+    background-image: url(../IMG/Fundo.jpg);
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    padding: 2.5% 0% 3% 0%; 
+    font-family: Open Sans Condensed;
+    color: #3a3a3a;
+}
+
+#bv p {
+    font-size: 110%;
+}
+
+span {
+    color: #006abb;
+}
+
+.infog{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 100%;
+}
+
+.infoc{
+    background-image: url(../IMG/Info.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: inherit;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.info {
+    width: 250px;
+    height: inherit;
+    border-style: groove;
+    border-width: 1px;
+    background-color: #FFF;
+    font-family: Open Sans Condensed;
+    font-size: 15px; 
+    color: #3a3a3a;
+    box-shadow: 0.5px 2px 4px rgba(0, 0, 0, 0.3), 0.5px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+    margin: 50px 0 40px 0;
+}
+
+.infot{
+    width: 100%;
+    height: 100%;
+}
+
+.info h4 {
+    text-align: center;
+    color: #FFF;
+    font-size: 180%;
+    padding: 5% 5% 5% 5%;
+}
+
+.info p {
+    margin: 5% 10% 0% 10%;
+    text-align: center;
+}
+
+.info a {
+    background: #FFF;
+    border-style: groove;
+    border-width: 2px;
+	padding : 1% 3% 1% 3%;
+	border-radius: 7px 7px 7px 7px;
+	text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 5% 35% 5% 35%;
+    font-family: Open Sans Condensed;
+    color: #3a3a3a;
+}
+
+.info a:hover {
+    background: #f3f3f3;
+}
+
+.info footer p{
+    margin-bottom: 2%;
+    color: #3a3a3a;
+}
+
+.apresentacao {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00233e;
+    color: #FFF;
+    font-family: Open Sans Condensed;
+    text-decoration: none;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 100%;
+}
+
+.text p {
+    margin: 2% 5% 5% 8%;
+    font-size: 110%;
+}
+
+.text h1 {
+    margin: 5% 5% 3% 8%;
+}
+
+.text a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.faixada {
+    width: 100%;
+    height: inherit;
+}
+
+.text {
+    width: 500px;
+    max-height: 100%;
+    margin-left: 100px;
+}
+
+.apresentacaof {
+    width: 550px;
+    max-height: 100%;
+}
+
+.parceiros {
+    width: 65%;
+    height: inherit;
+}
+
+#extra {
+    font-family: Open Sans Condensed;
+    text-align: center;
+    margin-top: 5%
+}
+
+#extra figure {
+    margin-top: 5%;
+}
+
+#rodape {
+    background-color: #00233e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding: 1% 0% 1% 0%;
+}
+
+#rodape div {
+    display: inline-flex;
+    align-items: center;
+}
+
+.direitos {
+    margin-right: 40%;
+}
+
+.locg {
+    position: relative;
+}
+
+.loc {
+    position: absolute;
+    opacity: 1;
+    z-index:1;
+    padding-top: 12%;
+    cursor: pointer;   
+}
+
+.loc_hover {
+    padding-top: 12%;
+    cursor: pointer;
+}
+
+.locg div figure img {
+    width: 40px;
+    height: inherit;
+}
+
+.loc:hover {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.end {
+    margin-left: 10px;
+}
+
+footer p {
+    font-family: Open Sans Condensed;
+    color: #FFF;
+}
+
+body {
+    background-color: #eeeeee;
+}
