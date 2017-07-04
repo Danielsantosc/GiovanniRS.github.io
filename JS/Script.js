@@ -10,9 +10,8 @@ $(function () {
 
 $(window).on("scroll", function () {
     var top = $(window).scrollTop();
-    var height = $("#menu").height();
 
-    if (top >= (height - 50)) {
+    if (top != 0) {
         $("#logo").css({ "width": "35px" });
         $("#menu").css({ "box-shadow": "0.5px 2px 4px rgba(0, 0, 0, 0.3), 0.5px 4px 8px rgba(0, 0, 0, 0.1)" });
     } else {
