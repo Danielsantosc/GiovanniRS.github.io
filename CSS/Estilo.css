@@ -171,7 +171,7 @@ span {
 
 .infog{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     max-height: 100%;
@@ -200,7 +200,7 @@ span {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 7px;
-    margin: 50px 0 40px 0;
+    margin: 50px 3% 40px 3%;
 }
 
 .infot{
@@ -357,6 +357,88 @@ footer p {
     color: #FFF;
 }
 
+#menuh {
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 10;
+    margin-left: -320px;
+    opacity: 0;
+    transition : 0.5s;
+}
+
+#menuh ul {
+    width: 300px;
+    height: 100%;
+    background-color: #FFF;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5px 2px 4px rgba(0, 0, 0, 0.3), 0.5px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#menuh ul li {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menuh ul li a {
+    color: #3a3a3a;
+    font-size: 20px;
+    font-family: Open Sans Condensed;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#menuh ul hr {
+    width: 90%;
+}
+
+#menuh ul li:nth-child(1){
+    justify-content: flex-end;
+    margin: 10px 0px 0px 0px;
+}
+
+#menuh ul li:nth-child(1) button{
+    color: #3a3a3a;
+    font-size: 20px;
+    font-family: Open Sans Condensed;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #3a3a3a;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.hambg div figure img {
+    width: 25px;
+    display: none;
+}
+
 body {
     background-color: #eeeeee;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .hambg div figure img {
+        display: block;
+    }
+
+    #menu ul li a {
+        display: none;
+    }
+
 }
