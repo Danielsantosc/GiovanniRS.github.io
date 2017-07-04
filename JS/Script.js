@@ -21,9 +21,9 @@ $(window).on("scroll", function () {
 });
 
 $(".hambg").on("click", function () {
-    $("#menuh").css({ "opacity": "1", "margin-left": "0" });
+    $("#menuh").css({ "opacity": "1", "margin-right": "0" });
 });
 
 $(".sair").on("click", function () {
-    $("#menuh").css({ "opacity": "0", "margin-left": "-320px" });
+    $("#menuh").css({ "opacity": "0", "margin-right": "-320px" });
 });

@@ -363,9 +363,10 @@ footer p {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     z-index: 10;
-    margin-left: -320px;
     opacity: 0;
     transition : 0.5s;
+    right: 20px;
+    margin-right: -350px;
 }
 
 #menuh ul {
@@ -376,7 +377,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0.5px 2px 4px rgba(0, 0, 0, 0.3), 0.5px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.3), -1px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #menuh ul li {
@@ -425,6 +426,7 @@ footer p {
 .hambg div figure img {
     width: 25px;
     display: none;
+    cursor: pointer;
 }
 
 body {
