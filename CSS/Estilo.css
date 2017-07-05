@@ -110,7 +110,7 @@
 #slide {
     margin-top: 100px;
     width: 100%;
-    height: inherit;
+    height: 375.08px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -118,7 +118,6 @@
 
 #slide div {
     height: 375.09px;
-    transition: 0.8s;
 }
 
 #slide div img {
@@ -127,15 +126,18 @@
 }
 
 #slide div:nth-child(1) {
-    display: block;
+    position: absolute;
+    z-index: 15;
 }
 
 #slide div:nth-child(2) {
-    margin-right: -100%;
+    position: absolute;
+    z-index: 10;
 }
 
 #slide div:nth-child(3) {
-    margin-right: -100%;
+    position: absolute;
+    z-index: 5;
 }
 
 #seta {
@@ -147,6 +149,7 @@
     justify-content: space-between;
     top: 0;
     left: 0;
+    z-index: 20;
 }
 
 .esquerda {
