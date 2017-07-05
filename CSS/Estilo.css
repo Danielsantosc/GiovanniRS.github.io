@@ -481,4 +481,16 @@ body {
     #menu ul li:nth-child(6) {
         display: block;
     }
+
+    .esquerda {
+        width: 75px;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .direita {
+        width: 75px;
+        opacity: 1;
+        transition: 0.3s;
+    }
 }
