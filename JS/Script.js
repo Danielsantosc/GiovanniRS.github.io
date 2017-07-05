@@ -1,13 +1,3 @@
-$(function () {
-    $("#slides ul").cycle({
-        fx: 'fade',
-        speed: 2000,
-        timeout: 4000,
-        prev: '#previous',
-        next: '#next',
-    })
-});
-
 $(window).on("scroll", function () {
     var top = $(window).scrollTop();
 
@@ -27,3 +17,45 @@ $(".hambg").on("click", function () {
 $(".sair").on("click", function () {
     $("#menuh").css({ "opacity": "0", "margin-right": "-320px" });
 });
+
+var slideAtual = 1;
+
+function prox() {
+  switch (slideAtual) {
+    case 1:
+      $("#slide div:nth-child(1)").hide();
+      $("#slide div:nth-child(2)").show();
+      slideAtual = 2;
+    break;
+    case 2:
+      $("#slide div:nth-child(2)").hide();
+      $("#slide div:nth-child(3)").show();
+      slideAtual = 3;
+    break;
+    case 3:
+      $("#slide div:nth-child(3)").hide();
+      $("#slide div:nth-child(1)").show();
+      slideAtual = 1;
+    break;
+  }
+}
+
+function volt() {
+  switch (slideAtual) {
+    case 1:
+      $("#slide div:nth-child(1)").hide();
+      $("#slide div:nth-child(3)").show();
+      slideAtual = 3;
+    break;
+    case 2:
+      $("#slide div:nth-child(2)").hide();
+      $("#slide div:nth-child(1)").show();
+      slideAtual = 1;
+    break;
+    case 3:
+      $("#slide div:nth-child(3)").hide();
+      $("#slide div:nth-child(2)").show();
+      slideAtual = 2;
+    break;
+  }
+}

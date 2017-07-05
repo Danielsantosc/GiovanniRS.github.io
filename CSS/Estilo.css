@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+*:focus {
+    outline: 0 none;
+    box-shadow: 0 0 0;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 #menu {
@@ -15,15 +20,11 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #C6C6C6;
-}
-
-.menor {
-    width: 35px;
-    background-color: #000;
+    top: 0;
 }
 
 nav div {
-    margin: 1.5% 0% 1% 15%;
+    margin: 21px 0% 13px 15%;
 }
 
 #menu ul {
@@ -78,12 +79,13 @@ nav div {
     position: absolute;
     opacity: 1;
     z-index:1;
-    cursor: pointer;   
+    cursor: pointer;
+    bottom: -13px;   
 }
 
 .contato_hover {
+    position: relative;
     cursor: pointer;
-    margin-top: 30%;
 }
 
 .contato:hover {
@@ -91,69 +93,87 @@ nav div {
     transition: 0.3s;
 }
 
-#slides {
-    margin: 0;
-    overflow: hidden;
-    padding-top: 119px;
-}
-
-#slides ul {
-    padding: 0;
+#slide {
+    margin-top: 120px;
     width: 100%;
-    height: 415px;
+    position: relative;
 }
 
-#slides ul li figure img {
-    background-size: cover;
+#slide div img {
     width: 100%;
-    height: 415px;
+    height: inherit;
 }
 
-#prox {
-    top: 50%;
-    left: 93%;
+#slide div:nth-child(1) {
+    display: block;
 }
 
-#volt {
-    top: 50%;
-    right: 93%;
+#slide div:nth-child(2) {
+    display: none;
 }
 
-#prox, #volt {
-    z-index: 5;
+#slide div:nth-child(3) {
+    display: none;
+}
+
+#seta {
     position: absolute;
-    font-family: Calibri;
-    font-size: 400%;
-}
- 
-#prox li, #volt li {
-    display: inline;
-}
- 
-#prox a, #volt a {
-    padding: 5px 10px;
-    border-radius: 3px;
-    color:transparent;
-    font-weight: bold;
-    text-decoration: none;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    -moz-transition: 0.4s;
-    transition: 0.4s;
-    -webkit-transition-delay: 0.1s;
-    -o-transition-delay: 0.1s;
-    -moz-transition-delay: 0.1s;
-    transition-delay: 0.1s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
 }
 
-#slides:hover #volt a, #slides:hover #prox a {
-    color:#FFF;
+.esquerda {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.5),transparent);
+    width: 200px;
+    height: 100%;
+    border: none;
+    color: rgba(250, 250, 250, 0.8);
+    font-size: 60px;
+    font-family: Open Sans Condensed;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.esquerda:hover{
+    opacity: 1;
+}
+
+.direita {
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.5),transparent);
+    width: 200px;
+    height: 100%;
+    border: none;
+    color: rgba(250, 250, 250, 0.8);
+    font-size: 60px;
+    font-family: Open Sans Condensed;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.direita:hover{
+    opacity: 1;
 }
 
 #bv{
     margin: 0;
     background-image: url(../IMG/Fundo.jpg);
     width: 100%;
+    height: 149px;
     height: inherit;
     text-align: center;
     padding: 2.5% 0% 3% 0%; 
