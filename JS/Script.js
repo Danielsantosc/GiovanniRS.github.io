@@ -2,10 +2,10 @@ $(window).on("scroll", function () {
     var top = $(window).scrollTop();
 
     if (top > 0) {
-        $("#logo").css({ "width": "35px" });
+        $("#logo").css({ "width": "50px", "height" : "50px" });
         $("#menu").css({ "box-shadow": "0.5px 2px 4px rgba(0, 0, 0, 0.3), 0.5px 4px 8px rgba(0, 0, 0, 0.1)" });
     } else {
-        $("#logo").css({ "width": "100px" });
+        $("#logo").css({ "width": "100px", "height" : "100px" });
         $("#menu").css({ "box-shadow": "none" });
     }
 });
