@@ -23,18 +23,19 @@ var slideAtual = 1;
 function prox() {
   switch (slideAtual) {
     case 1:
-      $("#slide div:nth-child(1)").hide();
-      $("#slide div:nth-child(2)").show();
+      $("#slide div:nth-child(1)").css({ "margin-left" : "-100%" });
+      $("#slide div:nth-child(2)").css({ "margin-right" : "0" });
       slideAtual = 2;
     break;
     case 2:
-      $("#slide div:nth-child(2)").hide();
-      $("#slide div:nth-child(3)").show();
+      $("#slide div:nth-child(2)").css({ "margin-left" : "-100%" });
+      $("#slide div:nth-child(3)").css({ "margin-right" : "0" });
       slideAtual = 3;
     break;
     case 3:
-      $("#slide div:nth-child(3)").hide();
-      $("#slide div:nth-child(1)").show();
+      $("#slide div:nth-child(3)").css({ "margin-right" : "-100%", "margin-left" : "0" });
+      $("#slide div:nth-child(2)").css({ "margin-right" : "-100%", "margin-left" : "0" });
+      $("#slide div:nth-child(1)").css({ "margin-right" : "0", "margin-left" : "0" });
       slideAtual = 1;
     break;
   }
@@ -43,19 +44,21 @@ function prox() {
 function volt() {
   switch (slideAtual) {
     case 1:
-      $("#slide div:nth-child(1)").hide();
-      $("#slide div:nth-child(3)").show();
+      $("#slide div:nth-child(1)").css({ "margin-left" : "-100%" });
+      $("#slide div:nth-child(3)").css({ "margin-right" : "0", "margin-left" : "0" });
+      $("#slide div:nth-child(2)").css({ "margin-right" : "0", "margin-left" : "-100%" });
       slideAtual = 3;
     break;
-    case 2:
-      $("#slide div:nth-child(2)").hide();
-      $("#slide div:nth-child(1)").show();
-      slideAtual = 1;
-    break;
     case 3:
-      $("#slide div:nth-child(3)").hide();
-      $("#slide div:nth-child(2)").show();
+      $("#slide div:nth-child(3)").css({ "margin-right" : "-100%" });
+      $("#slide div:nth-child(2)").css({ "margin-right" : "0", "margin-left" : "0" });
       slideAtual = 2;
+    break;
+    case 2:
+      $("#slide div:nth-child(2)").css({ "margin-right" : "-100%", "margin-left" : "0" });
+      $("#slide div:nth-child(3)").css({ "margin-right" : "-100%", "margin-left" : "0" });
+      $("#slide div:nth-child(1)").css({ "margin-right" : "0", "margin-left" : "0" });
+      slideAtual = 1;
     break;
   }
 }

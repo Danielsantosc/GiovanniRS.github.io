@@ -112,10 +112,13 @@
     width: 100%;
     height: inherit;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 #slide div {
     height: 375.09px;
+    transition: 0.8s;
 }
 
 #slide div img {
@@ -128,11 +131,11 @@
 }
 
 #slide div:nth-child(2) {
-    display: none;
+    margin-right: -100%;
 }
 
 #slide div:nth-child(3) {
-    display: none;
+    margin-right: -100%;
 }
 
 #seta {
@@ -470,6 +473,7 @@ footer p {
 
 body {
     background-color: #eeeeee;
+    overflow-x: hidden;
 }
 
 @media only screen and (max-width: 990px) {
