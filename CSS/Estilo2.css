@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0 none;
+    box-shadow: 0 0 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+/*----- Menu -----*/
+
+#menu {
+    background-color: #FFF;
+    z-index: 50;
+    position: fixed;
+	width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+    top: 0;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+#logo a figure img {
+    width: 100%;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    max-height: 100%;
+    align-items: center;
+}
+
+#menu ul li:nth-child(6) {
+    display: none;
+}
+
+.btn {
+    color: #3a3a3a;
+    font-size: 20px;
+    font-family: Open Sans Condensed;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+
+.btn::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #515151;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.btn:hover::after {
+    opacity: 1;
+}
+
+.contatog div figure img{
+    width: 30px;
+}
+
+.contatog {
+    position: relative;
+}
+
+.contato {
+    position: absolute;
+    opacity: 1;
+    z-index:1;
+    bottom: 0;   
+}
+
+.contato_hover {
+    position: relative;
+}
+
+.contato figure img:hover {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.contato figure {
+    height: 29.84px;
+}
+
+.contato_hover figure {
+    height: 29.84px;
+}
+
+
+/*----- Fim Menu -----*/
+/*----- Corpo do Site -----*/
+
+
+#principal {
+    margin: 135px 0px 10px 0px;
+    font-family: Open Sans Condensed;
+    color: #00233e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#principal h2{
+    margin-bottom: 10px;
+}
+
+#principal a {
+    background: #FFF;
+    border-style: groove;
+    border-width: 2px;
+	padding : 10px 20px 10px 20px;
+    width: 200px;
+	border-radius: 7px 7px 7px 7px;
+	text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-family: Open Sans Condensed;
+    color: #3a3a3a;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#principal a:hover {
+    background: #f3f3f3;
+}
+
+.emp {
+    margin: 0px 85px 0px 85px;
+}
+
+.pilares {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pilares div {
+    width: 60%;
+}
+
+.pilares div:nth-child(1) {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.pilares div img {
+    width: 150px;
+    height: 150px;
+}
+
+.pilaresA {
+    background-color: #00233e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #f3f3f3;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin: 50px 0px 50px 0px;
+}
+
+.pilaresA div {
+    width: 60%;
+}
+
+.pilaresA div:nth-child(1) {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.pilaresA div img {
+    width: 150px;
+    height: 150px;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/*----- Fim Corpo do Site -----*/
+/*----- Rodape -----*/
+
+
+#rodape {
+    background-color: #00233e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    padding: 1% 0% 1% 0%;
+}
+
+#rodape div {
+    display: inline-flex;
+    align-items: center;
+}
+
+.direitos {
+    margin-right: 40%;
+}
+
+.locg {
+    position: relative;
+}
+
+.loc {
+    position: absolute;
+    opacity: 1;
+    z-index:1;
+    padding-top: 12%;
+    cursor: pointer;   
+}
+
+.loc_hover {
+    padding-top: 12%;
+    cursor: pointer;
+}
+
+.locg div figure img {
+    width: 40px;
+    height: inherit;
+}
+
+.loc:hover {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.end {
+    margin-left: 10px;
+}
+
+footer p {
+    font-family: Open Sans Condensed;
+    color: #FFF;
+}
+
+
+/*----- Fim Rodape -----*/
+/*----- Menu Hamburguer -----*/
+
+
+#menuh {
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 100;
+    opacity: 0;
+    transition : 0.5s;
+    right: 20px;
+    margin-right: -350px;
+    top: 0;
+}
+
+#menuh ul {
+    width: 300px;
+    height: 100%;
+    background-color: #FFF;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.3), -1px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#menuh ul li {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menuh ul li a {
+    color: #3a3a3a;
+    font-size: 20px;
+    font-family: Open Sans Condensed;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#menuh ul hr {
+    width: 90%;
+}
+
+#menuh ul li:nth-child(1){
+    justify-content: flex-end;
+    margin: 10px 0px 0px 0px;
+}
+
+#menuh ul li:nth-child(1) button{
+    color: #3a3a3a;
+    font-size: 20px;
+    font-family: Open Sans Condensed;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #3a3a3a;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.hambg div figure img {
+    width: 25px;
+    cursor: pointer;
+}
+
+
+/*----- Fim Menu Hamburguer -----*/
+
+
+body {
+    background-color: #eeeeee;
+    overflow-x: hidden;
+}
+
+
+/*----- Responsivo -----*/
+
+
+@media only screen and (max-width: 990px) {
+
+    #menu ul li a {
+        display: none;
+    }
+
+    #menu ul li:nth-child(6) {
+        display: block;
+    }
+
+    .esquerda {
+        width: 75px;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .direita {
+        width: 75px;
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    #logo {
+        margin-left: 25px;
+    }
+}
