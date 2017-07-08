@@ -117,7 +117,7 @@
 #principal {
     margin: 135px 0px 10px 0px;
     font-family: Open Sans Condensed;
-    color: #00233e;
+    color: #003966;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +150,11 @@
 .emp {
     margin: 0px 95px 0px 95px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+.emp p {
+    color: #005291;
 }
 
 .pilares {

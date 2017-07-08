@@ -353,7 +353,8 @@ span {
 #extra {
     font-family: Open Sans Condensed;
     text-align: center;
-    margin-top: 5%
+    margin-top: 5%;
+    color: #3a3a3a;
 }
 
 #extra figure {
