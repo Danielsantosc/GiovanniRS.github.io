@@ -378,4 +378,9 @@ body {
     #logo {
         margin-left: 25px;
     }
+
+    .pilares div img {
+        width: 100px;
+        height: 100px;
+    }
 }
