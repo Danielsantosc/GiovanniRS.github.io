@@ -148,7 +148,9 @@
 }
 
 .emp {
-    margin: 0px 85px 0px 85px;
+    margin: 0px 95px 0px 95px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .pilares {
@@ -379,8 +381,8 @@ body {
         margin-left: 25px;
     }
 
-    .pilares div img {
-        width: 100px;
-        height: 100px;
+    .pilares div img, .pilaresA div img {
+        width: 80px;
+        height: 80px;
     }
 }
