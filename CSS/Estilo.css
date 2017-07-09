@@ -203,7 +203,7 @@
 
 
 /*----- Fim Slide -----*/
-/*----- Corpo do Site -----*/
+/*----- Index Corpo do Site -----*/
 
 
 #bv{
@@ -363,7 +363,146 @@ span {
 }
 
 
-/*----- Fim do Corpo -----*/
+/*----- Fim do Index -----*/
+/*----- Empresa -----*/
+
+
+#principalE {
+    margin: 135px 0px 10px 0px;
+    font-family: Open Sans Condensed;
+    color: #003966;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#principalE h2{
+    margin-bottom: 10px;
+}
+
+#principalE a {
+    background: #FFF;
+    border-style: groove;
+    border-width: 2px;
+	padding : 10px 20px 10px 20px;
+    width: 200px;
+	border-radius: 7px 7px 7px 7px;
+	text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-family: Open Sans Condensed;
+    color: #003966;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+#principalE a:hover {
+    background: #f3f3f3;
+}
+
+.emp {
+    margin: 0px 95px 0px 95px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.emp p {
+    color: #005291;
+}
+
+.pilares {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pilares div {
+    width: 60%;
+}
+
+.pilares div:nth-child(1) {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.pilares div img {
+    width: 150px;
+    height: 150px;
+}
+
+.pilaresA {
+    background-color: #00233e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #f3f3f3;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin: 50px 0px 50px 0px;
+}
+
+.pilaresA div {
+    width: 60%;
+}
+
+.pilaresA div:nth-child(1) {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.pilaresA div img {
+    width: 150px;
+    height: 150px;
+}
+
+#principalE hr {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/*----- Fim Empresa -----*/
+/*----- Serivços -----*/
+
+
+#principalS {
+    margin: 135px 200px 10px 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Open Sans Condensed;
+    color: #003966;
+}
+
+#principalS h1 {
+    margin-bottom: 15px;
+}
+
+#principalS p {
+    margin-bottom: 25px;
+}
+
+#principalS div {
+    background-color: #FFF;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    cursor: pointer;
+    box-shadow: 0.5px 2px 4px rgba(0, 0, 0, 0.3), 0.5px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#principalS div img {
+    width: 30px;
+    height: 20px;
+}
+
+
+/*----- Fim Serivços -----*/
 /*----- Rodape -----*/
 
 
@@ -536,4 +675,20 @@ body {
     #logo {
         margin-left: 25px;
     }
+
+    .pilares div img, .pilaresA div img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .emp {
+        margin: 0px 50px 0px 50px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #principalS {
+        margin: 135px 50px 0px 50px;
+    }
+
 }
